@@ -25,4 +25,4 @@ class Server:
     @staticmethod
     def __register_routes(app):
         """Приватный статический метод регистрации путей"""
-        __routes__.register_rotes(app)
+        __routes__.register_routes(app)
