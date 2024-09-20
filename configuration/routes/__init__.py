@@ -1,1 +1,1 @@
-from app.configuration.routes import routes
+from app.configuration.routes.routes import Routes
