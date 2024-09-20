@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.configuration.routes import __routes__
 
 
 class Server:
@@ -7,6 +8,7 @@ class Server:
 
     def __init__(self, app: FastAPI):
         self.__app = app
+        self.__register_routes(app)
 
     def get_app(self) -> FastAPI:
         return self.__app
@@ -20,4 +22,4 @@ class Server:
     @staticmethod
     def __register_routes(app):
         """Приватный статический метод регистрации путей"""
-        ...
+        __routes__.register_rotes(app)
