@@ -8,10 +8,10 @@ from fastapi import FastAPI
 
 @dataclass(frozen=True)  # frozen class неизменяемый
 class Routes:
-    routes: tuple
+    routers: tuple
 
     def register_routes(self, app: FastAPI):
         """Функция регистрирующая роутер в наше приложение"""
 
-        for router in self.routes:
+        for router in self.routers:
             app.include_router(router)
