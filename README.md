@@ -32,3 +32,7 @@
 
 ### Запуск проекта
 uvicorn app:create_app
+> http://127.0.0.1:8000/api/v1/hello
+```
+{"hello":"world"}
+```
